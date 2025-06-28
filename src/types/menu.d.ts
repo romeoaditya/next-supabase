@@ -6,4 +6,8 @@ interface IMenu {
   category: string;
   image: string;
 }
-export type {IMenu};
+
+interface IMenuCartItem extends IMenu {
+  quantity: number;
+}
+export type {IMenu, IMenuCartItem};
